@@ -58,3 +58,7 @@ Route::group(['prefix' => 'user'], function(){
 Route::fallback(function(){
     return view('error');
 });
+
+Route::get('/dashboard', function (){
+    return view('dashboard');
+});
