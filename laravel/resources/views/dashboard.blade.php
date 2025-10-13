@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+@extends('layout.main')
+@section('content')
 
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body class style="background-color: #ffcddaff;">
-    <div class = "container">
+<div class = "container">
         <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
@@ -87,6 +80,4 @@
                 </div>
         </div>
     </div>
-
-</body>
-</html>
+@endSection
