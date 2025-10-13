@@ -55,10 +55,15 @@ Route::group(['prefix' => 'user'], function(){
 //     return redirect()->route('userPage');
 // });
 
+Route::get('/dashboard', function (){
+    return view('dashboard');
+});
+
+Route::get('/responsive', function (){
+    return view('sample.responsive');
+});
+
 Route::fallback(function(){
     return view('error');
 });
 
-Route::get('/dashboard', function (){
-    return view('dashboard');
-});
